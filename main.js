@@ -21,7 +21,7 @@ closeIcon.addEventListener("click", () => {
     mobileMenuContainer.classList.remove("active");
 });
 
-const button = document.getElementById('delegar');
+const button = document.getElementById('desk-delegar');
         button.addEventListener('click', (event) => {
             if (button.innerHTML === "Dark") {
                 document.documentElement.style.setProperty('--color1', '#000000');
@@ -32,4 +32,38 @@ const button = document.getElementById('delegar');
                 document.documentElement.style.setProperty('--color2', '#000000');
                 button.innerHTML = "Dark";
             }
+});
+const button2 = document.getElementById('mob-delegar');
+        button2.addEventListener('click', (event) => {
+            if (button2.innerHTML === "Dark") {
+                document.documentElement.style.setProperty('--color1', '#000000');
+                document.documentElement.style.setProperty('--color2', '#FFFFFF');
+                button2.innerHTML = "Light";
+            } else {
+                document.documentElement.style.setProperty('--color1', '#FFFFFF');
+                document.documentElement.style.setProperty('--color2', '#000000');
+                button2.innerHTML = "Dark";
+            }
+});
+
+const synopsis = document.getElementById('syno');
+const synopsis_content = document.getElementById('syno-content');
+synopsis.addEventListener('click', (event) => {
+    if(synopsis_content.style.display == "none"){
+        synopsis_content.style.display = 'block';
+    }
+    else{
+        synopsis_content.style.display = 'none';
+    }
+});
+
+const cas = document.getElementById('cas');
+const cas_content = document.getElementById('cas-content');
+cas.addEventListener('click', (event) => {
+    if(cas_content.style.display == "none"){
+       cas_content.style.display = 'block';
+    }
+    else{
+        cas_content.style.display = 'none';
+    }
 });
