@@ -67,3 +67,6 @@ cas.addEventListener('click', (event) => {
         cas_content.style.display = 'none';
     }
 });
+document.getElementById('btn-back').addEventListener('click' , () => {
+    window.history.go(-1);
+});
