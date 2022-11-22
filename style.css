@@ -141,8 +141,9 @@ footer .wave img{
     width: 6.6rem;
     height: 2.1rem;
     border: none;
+    padding: 0;
     color: var(--color2);
-    font-size: 1rem;
+    font-size: 1.1rem;
     background: var(--color1);
     cursor: pointer;
     z-index: 0;
@@ -253,7 +254,8 @@ footer .wave img{
         font-size: 2rem;
     }
     #mob-delegar{
-        font-size: 2rem;
+        font-size: 1.5rem;
+        height: 3rem;
     }
 }
 @media(max-width: 550px){
